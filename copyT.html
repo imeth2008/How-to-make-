@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Text</title>
+    <link rel="stylesheet" href="./copyT.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+       
+        </style>
+        </head>
+        <body>
+        
+        <div class="top-container">
+            <li class="all"><a href="#" >All</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Images</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </div>
+        
+        <div class="header" id="myHeader">
+            <nav>
+                <div class="listitem">
+                    
+                    <li><a href="#"><i class="fas fa-home"></i></a></li>
+                    <li><a href="#">All Projects</a></li>
+                    <li><a href="#">JavaScript creations</a></li>
+                    <li><a href="#">CSS/html creations</a></li>
+                    <li onclick="show()"><a href="#">Language <i class="fas fa-sort-down"></i></a></li>
+                    <!-- <li><i class="fa" onclick="Bcolor(this)" style="margin-left: 50px; cursor: pointer;"></i></li> -->
+
+                </div>
+            </nav>
+        </div>
+        
+        <div class="vistara">
+            <div class="s-nav" id="s-nav">
+                <div class="list">
+                    <input type="search" name="" id="" placeholder="Search...">
+                    <h2>How To</h2>
+                    <li id="home"><a href="#">How To home</a></li><br>
+                    <h3>Menus</h3>
+                    <li><a href="#">Icon bar</a></li>
+                    <li><a href="#">Menu icon</a></li>
+                    <li><a href="#">Accordion</a></li>
+                    <li><a href="#">Tabs</a></li>
+                    <li><a href="#">Vertical Tabs</a></li>
+                    <li><a href="#">Tab headers</a></li>
+                    <li><a href="#">Full page tabs</a></li>
+                    <li><a href="#">Hover Tabs</a></li>
+                    <li><a href="#">Top navigation</a></li>
+                    <li><a href="#">Responsive Topnav</a></li>
+                    <li><a href="#">Nav bar with icons</a></li>
+                    <li class="copyTxt"><a href="#">Copy text</a></li>
+                    <li><a href="#">Search bar</a></li>
+                    <li><a href="#">Fixed sidebar</a></li>
+                </div>
+            </div>
+        </div>
+
+        <div class="stit">
+            <div class="title">
+                <h1>How TO - Copy Text to Clipboard</h1>
+            </div>
+
+            <div class="nap">
+                <div class="btns">
+                    <a href=""><button>Previous</button></a>
+                    <a href=""><button>Next</button></a><hr>
+                </div>
+                <div class="nvi">
+                    <h3>Learn how to copy text to the clipboard with JavaScript.</h3><hr>
+                </div>
+
+            </div>
+
+            <div class="wpatan">
+                <div class="tit">
+                    <h1>Copy Text to Clipboard</h1>
+                    <br>
+                    <h3>Step 1) Add HTML:</h3>
+                    <div class="mybox">
+                        <h1>Example</h1>
+                        <div class="whibox">
+                            <textarea name="mytxt" id="txt1" cols="75" rows="6" readonly>
+                                <!-- The text field -->
+                               <input type="text" value="Hello World" id="myInput" >
+
+                               <!-- The button used to copy the text -->
+                               <button onclick="myFunction()">Copy text</button>
+                            </textarea>
+                        </div>
+                    </div><br><br>
+                    <h3>Step 2) Add JavaScript:</h3>
+                    <div class="jsPart">
+                        <div class="JavaScript">
+                            <textarea name="mytxt" id="txt2" cols="75" rows="15" readonly>
+                                function myFunction() {
+                                    /* Get the text field */
+                                    var copyText = document.getElementById("myInput");
+                                  
+                                    /* Select the text field */
+                                    copyText.select();
+                                    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+                                  
+                                     /* Copy the text inside the text field */
+                                    navigator.clipboard.writeText(copyText.value);
+                                  
+                                    /* Alert the copied text */
+                                    alert("Copied the text: " + copyText.value);
+                                  }
+                            </textarea>
+                        </div>
+                        <a href="#"  target="_blank"><button class="learn">Learn how to</button></a>
+                    </div><br><hr><br><hr>
+                    <h1>Display Copied Text in a Tooltip</h1><br>
+                    <h3>Add CSS:</h3>
+                    <div class="cssPart">
+                        <div class="CSS">
+                            <div class="cssc">
+                                .tooltip {<br><br>
+                                   <p> position: relative; <br>
+                                    display: inline-block; </p> <br>
+                                  } <br> <br>
+                                  
+                                  .tooltip .tooltiptext { <br><br>
+                                   <p> visibility: hidden; <br>
+                                    width: 140px; <br>
+                                    background-color: #555; <br>
+                                    color: #fff; <br>
+                                    text-align: center; <br>
+                                    border-radius: 6px; <br>
+                                    padding: 5px; <br>
+                                    position: absolute; <br>
+                                    z-index: 1; <br>
+                                    bottom: 150%; <br>
+                                    left: 50%; <br>
+                                    margin-left: -75px; <br>
+                                    opacity: 0; <br>
+                                    transition: opacity 0.3s; </p><br>
+                                  } <br>
+                                   <br>
+                                  .tooltip .tooltiptext::after { 
+                                   <p> content: ""; <br>
+                                    position: absolute; <br>
+                                    top: 100%; <br>
+                                    left: 50%; <br>
+                                    margin-left: -5px; <br>
+                                    border-width: 5px; <br>
+                                    border-style: solid; <br>
+                                    border-color: #555 transparent transparent transparent;</p> <br>
+                                  } <br>
+                                   <br>
+                                  .tooltip:hover .tooltiptext { <br><br>
+                                   <p> visibility: visible; <br>
+                                    opacity: 1; </p> <br>
+                                  } <br>
+                            </div>
+                        </div>
+                        <a href="#" target="_blank"><button class="learn">Learn how to</button></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <script src="./copyT.js"></script>
+</body>
+</html>

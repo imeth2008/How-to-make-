@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&family=Merriweather&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&family=Merriweather&family=Oswald:wght@500&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&family=Merriweather&family=Oswald:wght@500&family=Roboto:wght@500&family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&family=Merriweather&family=Oswald:wght@500&family=Roboto:wght@500&family=Rubik:wght@500&family=Zen+Kaku+Gothic+New&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&family=Merriweather&family=Oswald:wght@500&family=Roboto:wght@500&family=Rubik:wght@500&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&family=Merriweather&family=Oswald:wght@500&family=Roboto:wght@500&family=Rubik:wght@500&family=Zen+Kaku+Gothic+Antique:wght@300&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+.listitem li{
+    /* color: black; */
+    display: flex;
+}
+.listitem {
+    display: flex;
+
+}
+.listitem a{
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.listitem a:hover{
+    background-color: royalblue;
+}
+.listitem li:nth-of-type(1){
+    border-bottom: red solid 4px;
+}
+nav{
+    background-color: cornflowerblue;
+    margin-left: -8px;
+    width: 1366px;
+    margin-top: -8px;
+    position: fixed;
+}
+li{
+    list-style: none;
+}
+*{
+    font-family: sans-serif;
+}
+.list{
+    margin-top: 70px;
+}
+.list a{
+    text-decoration: none;
+    color: #000;
+    font-family: sans-serif;
+}
+.list li{
+    padding: 5px;
+
+}
+.s-nav{
+    background-color: rgb(212, 207, 207);
+    margin-left: -8px;
+    margin-top: 54px;
+    width: 250px;
+    height: 595px;
+    position: fixed;
+    overflow: scroll;
+}
+.s-nav input[type="search"]{
+    margin-top: -30px;
+    outline: none;
+    height: 30px;
+    color: darkturquoise;
+    border: none;
+}
+.s-nav input::placeholder{
+    color: darkcyan;
+}
+.s-tit{
+    margin-left: 300px;
+    margin-top: 50px;
+}
+.language h2{
+    font-size: 20px;
+}
+.language{
+    padding: 5px;
+}
+.lang{
+    width: 250px;
+    height: 150px;
+    background-color: rgb(55, 84, 85);
+    margin-left: 300px;
+    margin-top: -35px;
+    position: fixed;
+    display: none;
+}
+.lang i{
+    color: white;
+    cursor: pointer;
+}
+.language a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.language a:hover{
+    color: white;
+}
+.clip input[type="text"]{
+    width: 200px;
+    height: 30px;
+    color: steelblue;
+    font-size: 17px;
+    margin-left: 20px;
+
+}
+.clip input[type="text"]::placeholder{
+    color: steelblue;
+}
+.clip  input[type="button"]{
+    width: 100px;
+    height: 35px;
+    /* margin-left: 20px; */
+
+}
+.copy{
+    margin-top: 100px;
+    width: 900px;
+    height: 300px;
+    background-color:rgb(201, 198, 198);;
+    box-shadow: 2px 5px 20px gray;
+    /* margin-left: 550px; */
+    text-align: left;
+    /* margin-left: 350px; */
+    /* margin-top: 150px; */  
+}
+.clip{
+    width: 900px; 
+    height: 200px;
+    background-color: white;
+    /* position: relative; */
+    display: inline-block;  
+}
+.clip h1, h3{
+    font-family: 'Nunito';
+    padding-left: 9px;
+}
+.leran button{
+    width: 100px;
+    height: 45px;
+    outline: none;
+    border: none;
+    background-color: steelblue;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.leran button:hover{
+    background-color: rgb(60, 113, 156);
+}
+/* ::-webkit-scrollbar{
+    background-color: steelblue;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(46, 86, 119);
+    height: 50px;
+    border-radius: 10px;
+} */
+
+#home{
+    background-color: rgb(53, 105, 148);
+}
+.filp{
+    /* margin-top: 100px; */
+    width: 900px;
+    height: 300px;
+    background-color:rgb(201, 198, 198);;
+    box-shadow: 2px 5px 20px gray;
+    /* margin-left: 550px; */
+    text-align: left;
+    /* margin-left: 350px; */
+    /* margin-top: 150px; */ 
+}
+.flip-box{
+    width: 900px; 
+    height: 200px;
+    background-color: white;
+    /* position: relative; */
+    display: inline-block;  
+}
+.flip-box {
+    display: flex;
+    grid-gap: 1rem;
+}
+.box1{
+    width: 300px;
+    height: 150px;
+    background-color: gray;
+    margin-left: 110px;
+    margin-top: 30px;
+}
+.box2{
+    width: 300px;
+    height: 150px;
+    background-color: rgb(243, 59, 59);
+    margin-left: 20px; 
+    margin-top: 30px;
+    transition: all 1s ease;
+}
+.box1 h1, .box2 h1{
+    text-align: center;
+}
+.box2:hover{
+    /* animation: hover 0.5s linear; */
+    transform: rotateX(180deg);
+    
+
+}
+.flip-box-inner {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+
+
+  .flip-box-inner2 {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box2:hover .flip-box-inner2 {
+    transform: rotateX(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front2, .flip-box-back2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side */
+  .flip-box-front2 {
+    background-color: rgb(252, 59, 59);
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back2 {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+  .a-type{
+          /* margin-top: 100px; */
+    width: 900px;
+    height: 300px;
+    background-color:rgb(201, 198, 198);;
+    box-shadow: 2px 5px 20px gray;
+    /* margin-left: 550px; */
+    text-align: left;
+    /* margin-left: 350px; */
+    /* margin-top: 150px; */ 
+  }
+  .s-type{
+    width: 900px; 
+    height: 200px;
+    background-color: white;
+    /* position: relative; */
+    display: inline-block; 
+  }
+.a-type .ss{
+      margin-left: 100px;
+      margin-top: 30px;
+      padding: 10px;
+}
